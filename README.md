@@ -1,13 +1,13 @@
-# Music Player
+# Cassette
 
-Music Player is an offline player for audio files already on your iPhone, iPad, or Mac. You choose one or more folders, the app indexes the audio inside them, and playback stays on the device. Files are not copied into the app and nothing is streamed.
+Cassette is an offline player for audio files already on your iPhone, iPad, or Mac. You choose one or more folders, the app indexes the audio inside them, and playback stays on the device. Files are not copied into the app and nothing is streamed.
 
 | | |
 | --- | --- |
 | Platforms | iOS 17 and later (iPhone and iPad), macOS 15 and later |
 | Language | Swift 5, SwiftUI |
 | Version | 1.0.0 |
-| Bundle ID | `com.mujassir.musicplayer` |
+| Bundle ID | `com.mujassir.Cassette` |
 | License | [Apache License 2.0](LICENSE) |
 
 ## What it does
@@ -42,14 +42,14 @@ The first launch with an empty library shows a welcome screen and a **Choose Mus
 
 Tapping a song plays it and queues the other songs in the same folder, in the current sort order.
 
-- **Play / pause**, **next**, and **previous**.
+- **Play / pause**, **next**, and **previous**. Next on the last song goes to the first song.
 - Previous restarts the current song when more than 3 seconds have played. Otherwise it goes to the previous song. At the start of the queue it restarts the song, or wraps to the end when repeat-all is on.
 - Drag the seek bar to scrub.
 - **Shuffle** randomizes the upcoming queue and keeps the current song first.
 - **Repeat** cycles through off, repeat one, and repeat all.
   - Repeat one restarts the current song when it ends.
   - Repeat all continues through the queue and wraps to the start.
-  - Repeat off plays the next song if there is one, then pauses.
+  - Repeat off plays the next song if there is one. After the last song it continues from the first song.
 - When a song ends with repeat off and more songs remain, the next song starts.
 - The queue, position, shuffle, and repeat mode are saved. On Mac, the app resumes and keeps playing. On iPhone and iPad, it restores the song paused at the saved position.
 - The mini player sits at the bottom while something is playing. Its title scrolls while audio is playing.
@@ -83,11 +83,11 @@ No third-party packages are used.
 
 ### Open and run
 
-1. Clone the repository and open `MusicPlayer.xcodeproj` in Xcode.
-2. Select the **MusicPlayer** scheme for iPhone and iPad, or **MusicPlayerMac** for Mac.
+1. Clone the repository and open `Cassette.xcodeproj` in Xcode.
+2. Select the **Cassette** scheme for iPhone and iPad, or **CassetteMac** for Mac.
 3. Choose a run destination: a simulator, a connected device, or **My Mac**.
 4. Open the target’s **Signing & Capabilities** tab and set your Team. Signing is automatic.
-5. If the bundle identifier `com.mujassir.musicplayer` is already taken by another team, change `PRODUCT_BUNDLE_IDENTIFIER` for that target (or the `bundleIdPrefix` / target settings in `project.yml`, then regenerate).
+5. If the bundle identifier `com.mujassir.Cassette` is already taken by another team, change `PRODUCT_BUNDLE_IDENTIFIER` for that target (or the `bundleIdPrefix` / target settings in `project.yml`, then regenerate).
 6. Press **Run**.
 
 On a physical iPhone or iPad, trust the developer certificate in **Settings → General → VPN & Device Management** if iOS asks.
@@ -103,20 +103,20 @@ If you add files to a folder later, use **Rescan**.
 
 ### Regenerate the Xcode project
 
-`project.yml` is the source of the project. The checked-in `MusicPlayer.xcodeproj` is generated from it. After you change targets, deployment versions, entitlements, or the bundle identifier in `project.yml`:
+`project.yml` is the source of the project. The checked-in `Cassette.xcodeproj` is generated from it. After you change targets, deployment versions, entitlements, or the bundle identifier in `project.yml`:
 
 ```bash
 brew install xcodegen
 xcodegen generate
 ```
 
-Run that from the repository root. It rewrites `MusicPlayer.xcodeproj`.
+Run that from the repository root. It rewrites `Cassette.xcodeproj`.
 
 ## Project layout
 
 ```
 project.yml                  XcodeGen spec (targets, signing, schemes)
-MusicPlayer.xcodeproj        Generated Xcode project
+Cassette.xcodeproj           Generated Xcode project
 Config/
   iOS-Info.plist             Background audio mode
   iOS.entitlements

@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0901BC77E7D5E40082A6C3C9 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F152BF1446806D5C1FD3706 /* AppModel.swift */; };
+		120796996F91349FBD663362 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4095E58DAA6930F5C260BB4F /* PlayerController.swift */; };
+		3083235E78097B70F7072204 /* LibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D6EAB4068BED29851D67B2 /* LibraryStore.swift */; };
+		5FB27F96C2400D325DFA6EC2 /* MusicPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C843FB55859E2BFFDA1AAABA /* MusicPlayerApp.swift */; };
+		614303208B7BCDAA9AF79D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2F62DAF5F3A0F4A69D3C40 /* Assets.xcassets */; };
+		7679010937D38C1D9A2F5A8D /* LibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D6EAB4068BED29851D67B2 /* LibraryStore.swift */; };
+		7C0508D0D98135A4B5556528 /* MusicPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C843FB55859E2BFFDA1AAABA /* MusicPlayerApp.swift */; };
+		B784EF368A4DB5EA60215EB6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C5DB3F7189726EADA024D1 /* RootView.swift */; };
+		C05BA637589B3D9461E148E7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C5DB3F7189726EADA024D1 /* RootView.swift */; };
+		E43C4D10001A4610D736A598 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5AAFA835048E2FA7063A70 /* Models.swift */; };
+		E51F2F271A46AD7C5567F54F /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F152BF1446806D5C1FD3706 /* AppModel.swift */; };
+		E770B076D008AFE5B1E70464 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5AAFA835048E2FA7063A70 /* Models.swift */; };
+		EA77F8611DADCD3526973899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2F62DAF5F3A0F4A69D3C40 /* Assets.xcassets */; };
+		EF203586411315D283B2B0D5 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4095E58DAA6930F5C260BB4F /* PlayerController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F2F62DAF5F3A0F4A69D3C40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4095E58DAA6930F5C260BB4F /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		409BC054B690D02D6D416F3E /* Cassette.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Cassette.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F152BF1446806D5C1FD3706 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		A6C5DB3F7189726EADA024D1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B0D6EAB4068BED29851D67B2 /* LibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryStore.swift; sourceTree = "<group>"; };
+		C843FB55859E2BFFDA1AAABA /* MusicPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerApp.swift; sourceTree = "<group>"; };
+		EF5AAFA835048E2FA7063A70 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F0A3CBE854BDB0945BAFCB10 /* CassetteMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CassetteMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1443E8B2511C29892D4B2652 /* MusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				9F152BF1446806D5C1FD3706 /* AppModel.swift */,
+				1F2F62DAF5F3A0F4A69D3C40 /* Assets.xcassets */,
+				B0D6EAB4068BED29851D67B2 /* LibraryStore.swift */,
+				EF5AAFA835048E2FA7063A70 /* Models.swift */,
+				C843FB55859E2BFFDA1AAABA /* MusicPlayerApp.swift */,
+				4095E58DAA6930F5C260BB4F /* PlayerController.swift */,
+				A6C5DB3F7189726EADA024D1 /* RootView.swift */,
+			);
+			path = MusicPlayer;
+			sourceTree = "<group>";
+		};
+		2E7ED38D71EBCD5D268DA31C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				409BC054B690D02D6D416F3E /* Cassette.app */,
+				F0A3CBE854BDB0945BAFCB10 /* CassetteMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49ADFBFD00B2189E0A5D138F = {
+			isa = PBXGroup;
+			children = (
+				1443E8B2511C29892D4B2652 /* MusicPlayer */,
+				2E7ED38D71EBCD5D268DA31C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D82A1428E4CC56A89E3E6449 /* Cassette */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9F42C692C5A88B5467509AB /* Build configuration list for PBXNativeTarget "Cassette" */;
+			buildPhases = (
+				B4489F4E013508B2A05AE6DB /* Sources */,
+				5FE53159AABCCA1BCD933DF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cassette;
+			packageProductDependencies = (
+			);
+			productName = Cassette;
+			productReference = 409BC054B690D02D6D416F3E /* Cassette.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE8E921BCF895414D431E05D /* CassetteMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EBBAD944BD97FBD8A21660C /* Build configuration list for PBXNativeTarget "CassetteMac" */;
+			buildPhases = (
+				C601D0810CAE5F9B6D0BF6DF /* Sources */,
+				8B0026B6710BE5C5E7F5543C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CassetteMac;
+			packageProductDependencies = (
+			);
+			productName = CassetteMac;
+			productReference = F0A3CBE854BDB0945BAFCB10 /* CassetteMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F18188A55F1B1EE556B4D8F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D82A1428E4CC56A89E3E6449 = {
+						DevelopmentTeam = KMW97A6XG2;
+						ProvisioningStyle = Automatic;
+					};
+					FE8E921BCF895414D431E05D = {
+						DevelopmentTeam = KMW97A6XG2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C4D62CF184DA957A415B91CB /* Build configuration list for PBXProject "Cassette" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 49ADFBFD00B2189E0A5D138F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2E7ED38D71EBCD5D268DA31C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D82A1428E4CC56A89E3E6449 /* Cassette */,
+				FE8E921BCF895414D431E05D /* CassetteMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FE53159AABCCA1BCD933DF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614303208B7BCDAA9AF79D3B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0026B6710BE5C5E7F5543C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA77F8611DADCD3526973899 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4489F4E013508B2A05AE6DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E51F2F271A46AD7C5567F54F /* AppModel.swift in Sources */,
+				7679010937D38C1D9A2F5A8D /* LibraryStore.swift in Sources */,
+				E43C4D10001A4610D736A598 /* Models.swift in Sources */,
+				5FB27F96C2400D325DFA6EC2 /* MusicPlayerApp.swift in Sources */,
+				120796996F91349FBD663362 /* PlayerController.swift in Sources */,
+				C05BA637589B3D9461E148E7 /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C601D0810CAE5F9B6D0BF6DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0901BC77E7D5E40082A6C3C9 /* AppModel.swift in Sources */,
+				3083235E78097B70F7072204 /* LibraryStore.swift in Sources */,
+				E770B076D008AFE5B1E70464 /* Models.swift in Sources */,
+				7C0508D0D98135A4B5556528 /* MusicPlayerApp.swift in Sources */,
+				EF203586411315D283B2B0D5 /* PlayerController.swift in Sources */,
+				B784EF368A4DB5EA60215EB6 /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2083013A9682EFBF0191B134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Config/macOS.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Cassette;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mujassir.Cassette;
+				PRODUCT_NAME = Cassette;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		271BAC7A42D05BFE1C11CB34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Config/iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Config/iOS-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Cassette;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mujassir.Cassette;
+				PRODUCT_NAME = Cassette;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		37DD3822AF7C9DB223736E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KMW97A6XG2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8CA7ED2EB31ED0824329EBB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KMW97A6XG2;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CE65F24436E05EF6B940AE60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Config/iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Config/iOS-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Cassette;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mujassir.Cassette;
+				PRODUCT_NAME = Cassette;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F345E27A320B8EC283286C6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Config/macOS.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Cassette;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mujassir.Cassette;
+				PRODUCT_NAME = Cassette;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EBBAD944BD97FBD8A21660C /* Build configuration list for PBXNativeTarget "CassetteMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F345E27A320B8EC283286C6F /* Debug */,
+				2083013A9682EFBF0191B134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C4D62CF184DA957A415B91CB /* Build configuration list for PBXProject "Cassette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37DD3822AF7C9DB223736E68 /* Debug */,
+				8CA7ED2EB31ED0824329EBB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F9F42C692C5A88B5467509AB /* Build configuration list for PBXNativeTarget "Cassette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE65F24436E05EF6B940AE60 /* Debug */,
+				271BAC7A42D05BFE1C11CB34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F18188A55F1B1EE556B4D8F5 /* Project object */;
+}

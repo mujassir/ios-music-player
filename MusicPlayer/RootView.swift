@@ -51,7 +51,11 @@ struct RootView: View {
         VStack(spacing: 0) {
             folderBrowser
             if app.player.currentTrack != nil {
+                #if os(iOS)
+                MiniPlayer(showPlayer: $showPlayer, onSearch: focusSearch, onBack: goBackToFolders, canGoBack: canGoBackToFolders)
+                #else
                 MiniPlayer(showPlayer: $showPlayer, onSearch: focusSearch)
+                #endif
             }
         }
         .ignoresSafeArea(edges: .bottom)
@@ -103,7 +107,10 @@ struct RootView: View {
             #if os(iOS)
             .searchable(text: $query, isPresented: $searchPresented, placement: .navigationBarDrawer(displayMode: .always), prompt: "Songs, artists, albums")
             .searchSuggestions {
-                if isSearching {
+                if isSearching && matchingSongs.isEmpty {
+                    Text("No track found")
+                        .foregroundStyle(.secondary)
+                } else if isSearching {
                     ForEach(matchingSongs) { track in
                         Button(track.title) {
                             playFromSearch(track)
@@ -217,7 +224,7 @@ struct RootView: View {
     private var searchResultPanel: some View {
         VStack(alignment: .leading, spacing: 2) {
             if matchingSongs.isEmpty {
-                Text("No results")
+                Text("No track found")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -264,6 +271,25 @@ struct RootView: View {
         }
         .padding(.vertical, 8)
     }
+
+    #if os(iOS)
+    /// True when there is somewhere to go back to: a folder's songs or an open search.
+    /// On iPad the sidebar can be hidden, so going back to show it is always allowed.
+    private var canGoBackToFolders: Bool {
+        sizeClass != .compact || selectedSidebarID != nil || searchPresented
+    }
+
+    /// Leaves the current folder (and any search) and shows the folder list.
+    private func goBackToFolders() {
+        query = ""
+        sidebarBeforeSearch = nil
+        searchPresented = false
+        if sizeClass == .compact {
+            selectedSidebarID = nil
+        }
+        columnVisibility = .all
+    }
+    #endif
 
     private func focusSearch() {
         #if os(iOS)
@@ -337,7 +363,7 @@ private struct WelcomeView: View {
                 .foregroundStyle(.secondary)
             Text("Play music from a folder")
                 .font(.title2.bold())
-            Text("Choose a folder on this \(deviceName). Music Player indexes the audio files there and plays them on iPhone and Mac.")
+            Text("Choose a folder on this \(deviceName). Cassette indexes the audio files there and plays them on iPhone and Mac.")
                 .multilineTextAlignment(.center)
                 .foregroundStyle(.secondary)
                 .frame(maxWidth: 420)
@@ -649,6 +675,8 @@ struct MiniPlayer: View {
     var reservesHomeArea = true
     var usesSystemIcons = false
     var onShowFolder: (() -> Void)? = nil
+    var onBack: (() -> Void)? = nil
+    var canGoBack = false
 
     private var cardColor: Color {
         colorScheme == .dark ? Color(white: 0.15) : Color(white: 0.90)
@@ -687,9 +715,11 @@ struct MiniPlayer: View {
                     }
                     #if os(iOS)
                     if !usesSystemIcons {
-                        barButton("magnifyingglass", label: "Search", expands: false) {
-                            onSearch()
+                        barButton("chevron.backward", label: "Back to folders", expands: false) {
+                            onBack?()
                         }
+                        .disabled(!canGoBack)
+                        .opacity(canGoBack ? 1 : 0.35)
                     }
                     #endif
                     barButton("backward.fill", label: "Previous", expands: usesSystemIcons) {
@@ -709,8 +739,8 @@ struct MiniPlayer: View {
                     }
                     #if os(iOS)
                     if !usesSystemIcons {
-                        barButton(app.player.repeatMode.symbol, label: app.player.repeatMode.label, active: app.player.repeatMode != .off, expands: false) {
-                            app.player.cycleRepeat()
+                        barButton("magnifyingglass", label: "Search", expands: false) {
+                            onSearch()
                         }
                     }
                     #endif

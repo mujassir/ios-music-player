@@ -107,9 +107,7 @@ final class PlayerController: ObservableObject {
 
     func next() {
         guard !queue.isEmpty, let index = currentIndex else { return }
-        if repeatMode == .all || index + 1 < queue.count {
-            load(index: (index + 1) % queue.count, autoplay: true, time: 0)
-        }
+        load(index: (index + 1) % queue.count, autoplay: true, time: 0)
     }
 
     func previous() {
@@ -241,10 +239,12 @@ final class PlayerController: ObservableObject {
         case .all:
             next()
         case .off:
-            if let index = currentIndex, index + 1 < queue.count {
+            guard let index = currentIndex, !queue.isEmpty else { return }
+            if index + 1 < queue.count {
                 load(index: index + 1, autoplay: true, time: 0)
             } else {
-                pause()
+                // End of the queue: continue from the first track.
+                load(index: 0, autoplay: true, time: 0)
             }
         }
     }

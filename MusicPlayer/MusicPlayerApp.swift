@@ -179,7 +179,7 @@ private struct MenuBarPlayer: View {
                 .focused($searchFocused)
             if !trimmedQuery.isEmpty {
                 if searchResults.isEmpty {
-                    Text("No results")
+                    Text("No track found")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                         .frame(maxWidth: .infinity, alignment: .leading)

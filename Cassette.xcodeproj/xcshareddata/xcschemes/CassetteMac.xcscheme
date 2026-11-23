@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BD58B6512631B9F454D42955"
-               BuildableName = "MusicPlayer.app"
-               BlueprintName = "MusicPlayer"
-               ReferencedContainer = "container:MusicPlayer.xcodeproj">
+               BlueprintIdentifier = "FE8E921BCF895414D431E05D"
+               BuildableName = "CassetteMac.app"
+               BlueprintName = "CassetteMac"
+               ReferencedContainer = "container:Cassette.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD58B6512631B9F454D42955"
-            BuildableName = "MusicPlayer.app"
-            BlueprintName = "MusicPlayer"
-            ReferencedContainer = "container:MusicPlayer.xcodeproj">
+            BlueprintIdentifier = "FE8E921BCF895414D431E05D"
+            BuildableName = "CassetteMac.app"
+            BlueprintName = "CassetteMac"
+            ReferencedContainer = "container:Cassette.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -57,10 +57,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD58B6512631B9F454D42955"
-            BuildableName = "MusicPlayer.app"
-            BlueprintName = "MusicPlayer"
-            ReferencedContainer = "container:MusicPlayer.xcodeproj">
+            BlueprintIdentifier = "FE8E921BCF895414D431E05D"
+            BuildableName = "CassetteMac.app"
+            BlueprintName = "CassetteMac"
+            ReferencedContainer = "container:Cassette.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD58B6512631B9F454D42955"
-            BuildableName = "MusicPlayer.app"
-            BlueprintName = "MusicPlayer"
-            ReferencedContainer = "container:MusicPlayer.xcodeproj">
+            BlueprintIdentifier = "FE8E921BCF895414D431E05D"
+            BuildableName = "CassetteMac.app"
+            BlueprintName = "CassetteMac"
+            ReferencedContainer = "container:Cassette.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>

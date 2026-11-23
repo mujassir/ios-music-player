@@ -1,6 +1,6 @@
-name: MusicPlayer
+name: Cassette
 options:
-  bundleIdPrefix: com.musicplayer
+  bundleIdPrefix: com.mujassir
   deploymentTarget:
     iOS: "17.0"
     macOS: "15.0"
@@ -12,8 +12,9 @@ settings:
   CURRENT_PROJECT_VERSION: "1"
   SWIFT_STRICT_CONCURRENCY: minimal
   CODE_SIGN_STYLE: Automatic
+  DEVELOPMENT_TEAM: KMW97A6XG2
 targets:
-  MusicPlayer:
+  Cassette:
     type: application
     platform: iOS
     sources:
@@ -22,10 +23,10 @@ targets:
           - macOS/**
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.mujassir.musicplayer
-        PRODUCT_NAME: MusicPlayer
+        PRODUCT_BUNDLE_IDENTIFIER: com.mujassir.Cassette
+        PRODUCT_NAME: Cassette
         TARGETED_DEVICE_FAMILY: "1,2"
-        INFOPLIST_KEY_CFBundleDisplayName: Music Player
+        INFOPLIST_KEY_CFBundleDisplayName: Cassette
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
         GENERATE_INFOPLIST_FILE: YES
@@ -34,23 +35,35 @@ targets:
     info:
       path: Config/iOS-Info.plist
       properties:
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        ITSAppUsesNonExemptEncryption: false
         UIBackgroundModes:
           - audio
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
     entitlements:
       path: Config/iOS.entitlements
       properties: {}
     scheme:
       gatherCoverageData: false
-  MusicPlayerMac:
+  CassetteMac:
     type: application
     platform: macOS
     sources:
       - path: MusicPlayer
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.mujassir.musicplayer
-        PRODUCT_NAME: MusicPlayer
-        INFOPLIST_KEY_CFBundleDisplayName: Music Player
+        PRODUCT_BUNDLE_IDENTIFIER: com.mujassir.Cassette
+        PRODUCT_NAME: Cassette
+        INFOPLIST_KEY_CFBundleDisplayName: Cassette
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.music
         GENERATE_INFOPLIST_FILE: YES
         CODE_SIGN_ENTITLEMENTS: Config/macOS.entitlements
@@ -65,15 +78,15 @@ targets:
     scheme:
       gatherCoverageData: false
 schemes:
-  MusicPlayer:
+  Cassette:
     build:
       targets:
-        MusicPlayer: all
+        Cassette: all
     run:
       config: Debug
-  MusicPlayerMac:
+  CassetteMac:
     build:
       targets:
-        MusicPlayerMac: all
+        CassetteMac: all
     run:
       config: Debug
