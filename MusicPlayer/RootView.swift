@@ -37,6 +37,7 @@ struct RootView: View {
         .sheet(isPresented: $showPlayer) {
             NowPlayingView()
                 .environmentObject(app)
+                .modifier(PageSizedSheet())
         }
         #if os(iOS)
         .background {
@@ -52,7 +53,7 @@ struct RootView: View {
             folderBrowser
             if app.player.currentTrack != nil {
                 #if os(iOS)
-                MiniPlayer(showPlayer: $showPlayer, onSearch: focusSearch, onBack: goBackToFolders, canGoBack: canGoBackToFolders)
+                MiniPlayer(showPlayer: $showPlayer, onSearch: focusSearch, onOpenPlayer: { showPlayer = true }, onBack: goBackToFolders, canGoBack: canGoBackToFolders)
                 #else
                 MiniPlayer(showPlayer: $showPlayer, onSearch: focusSearch)
                 #endif
@@ -875,6 +876,22 @@ private struct HomeAreaPadding: ViewModifier {
         } else {
             content
         }
+    }
+}
+
+/// On iPad the default form sheet is too short for Now Playing and clips the
+/// controls; the page size gives it the room it needs. iPhone is unaffected.
+private struct PageSizedSheet: ViewModifier {
+    func body(content: Content) -> some View {
+        #if os(iOS)
+        if #available(iOS 18.0, *) {
+            content.presentationSizing(.page)
+        } else {
+            content
+        }
+        #else
+        content
+        #endif
     }
 }
 
