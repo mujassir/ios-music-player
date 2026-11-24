@@ -79,6 +79,18 @@ final class PlayerController: ObservableObject {
         load(index: index, autoplay: true, time: 0)
     }
 
+    /// Stops playback and empties the queue (used when the library is reset).
+    func clear() {
+        player.pause()
+        player.replaceCurrentItem(with: nil)
+        queue = []
+        currentIndex = nil
+        currentTime = 0
+        duration = 0
+        updateNowPlaying(rate: 0)
+        persist()
+    }
+
     func playQueued(at index: Int) {
         load(index: index, autoplay: true, time: 0)
     }

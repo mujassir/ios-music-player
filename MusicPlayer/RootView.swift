@@ -21,6 +21,7 @@ struct RootView: View {
     @State private var didOpenRestoredFolder = false
     @State private var showPlayer = false
     @State private var showFolderPicker = false
+    @State private var showResetConfirmation = false
     @State private var columnVisibility = NavigationSplitViewVisibility.automatic
     #if os(iOS)
     @State private var sidebarBeforeSearch: String?
@@ -97,6 +98,12 @@ struct RootView: View {
                         Label("Rescan", systemImage: "arrow.clockwise")
                     }
                     .disabled(app.library.isScanning)
+                    Button(role: .destructive) {
+                        showResetConfirmation = true
+                    } label: {
+                        Label("Reset", systemImage: "arrow.counterclockwise.circle")
+                            .foregroundStyle(.red)
+                    }
                     if !app.library.statusMessage.isEmpty {
                         Text(app.library.statusMessage)
                             .font(.footnote)
@@ -163,6 +170,20 @@ struct RootView: View {
         #if os(macOS)
         .toolbarBackground(.visible, for: .windowToolbar)
         #endif
+        .confirmationDialog("Reset your library?", isPresented: $showResetConfirmation, titleVisibility: .visible) {
+            Button("Reset Library", role: .destructive, action: resetLibrary)
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("All folders and songs are removed from Cassette. Your music files are not deleted. You can add folders again at any time.")
+        }
+    }
+
+    private func resetLibrary() {
+        app.player.clear()
+        app.library.reset()
+        selectedSidebarID = nil
+        focusedTrackID = nil
+        query = ""
     }
 
     private func playFromSearch(_ track: Track) {

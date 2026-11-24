@@ -163,6 +163,23 @@ final class LibraryStore: ObservableObject {
         statusMessage = "Removed \(folder.name)."
     }
 
+    /// Forgets every folder and song in the library. The music files themselves are not touched.
+    func reset() {
+        scanQueue?.cancel()
+        scanQueue = nil
+        for folder in folders {
+            remove(folder)
+        }
+        // Also clear any leftover artwork thumbnails from earlier scans.
+        if let leftovers = try? FileManager.default.contentsOfDirectory(at: Self.artworkDirectory, includingPropertiesForKeys: nil) {
+            for file in leftovers {
+                try? FileManager.default.removeItem(at: file)
+            }
+        }
+        isScanning = false
+        statusMessage = ""
+    }
+
     func rescanAll() {
         guard !folders.isEmpty else {
             statusMessage = "Choose a music folder first."
