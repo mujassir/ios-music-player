@@ -5,7 +5,7 @@ Paste everything between the lines into App Store Connect → iOS App 1.0.0 → 
 ---
 
 1. SCREEN RECORDING
-Attached in the App Review attachments: recorded on a physical iPhone 17 Pro running the latest iOS. It starts from the Home Screen, launches Cassette, adds a music folder, plays songs, uses search and Now Playing, and shows playback continuing on the Lock Screen. Cassette has no accounts, no user-generated content and no paid content.
+Attached in the App Review attachments: recorded on a physical iPhone 17 Pro running the latest iOS. It starts from the Home Screen, launches Cassette, adds a music folder, plays songs, uses search and Now Playing, then goes to the Home Screen to show playback continuing in the background and being controlled from the Lock Screen view and Control Center. (iOS stops screen recordings when the device is locked, so the Lock Screen controls are shown by swiping down from the top-left.) Cassette has no accounts, no user-generated content and no paid content.
 
 2. PURPOSE AND TARGET AUDIENCE
 Cassette is an offline music player for people who already own music files (for example ripped CDs, purchased downloads or their own recordings) and want to play them on iPhone or iPad without streaming, a subscription, an account or an internet connection, such as on flights, while travelling or with poor signal. The user picks one or more folders in the Files app; Cassette indexes the audio inside (MP3, M4A, AAC, ALAC, FLAC, WAV, AIFF) and plays it with background audio and Lock Screen controls. Files are never copied or uploaded.

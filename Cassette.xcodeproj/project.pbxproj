@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		0901BC77E7D5E40082A6C3C9 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F152BF1446806D5C1FD3706 /* AppModel.swift */; };
 		120796996F91349FBD663362 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4095E58DAA6930F5C260BB4F /* PlayerController.swift */; };
+		1E8F0A63ED1AAAD2B65043C9 /* CassetteIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF6360E8A284CBA97C67F2 /* CassetteIntents.swift */; };
+		27ADEF78EF4B7294AFD26201 /* CassetteIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF6360E8A284CBA97C67F2 /* CassetteIntents.swift */; };
 		3083235E78097B70F7072204 /* LibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D6EAB4068BED29851D67B2 /* LibraryStore.swift */; };
+		37576AF3F3A524696715230C /* SiriMediaHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB3A3050D707E098A49D45 /* SiriMediaHandler.swift */; };
+		4E15BB3B612B7612AB352CD7 /* MusicSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5719091C191A0484418C2C /* MusicSearch.swift */; };
+		5583C47E79730F680CC3C36E /* SiriMediaHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB3A3050D707E098A49D45 /* SiriMediaHandler.swift */; };
 		5FB27F96C2400D325DFA6EC2 /* MusicPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C843FB55859E2BFFDA1AAABA /* MusicPlayerApp.swift */; };
 		614303208B7BCDAA9AF79D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2F62DAF5F3A0F4A69D3C40 /* Assets.xcassets */; };
 		7679010937D38C1D9A2F5A8D /* LibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D6EAB4068BED29851D67B2 /* LibraryStore.swift */; };
 		7C0508D0D98135A4B5556528 /* MusicPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C843FB55859E2BFFDA1AAABA /* MusicPlayerApp.swift */; };
+		7FBC6485331826C3947B0FCD /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA771710AA336C90C54CE630 /* CarPlaySceneDelegate.swift */; };
+		A194513E9C2F86AB92516B64 /* MusicSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5719091C191A0484418C2C /* MusicSearch.swift */; };
+		B0038C1FB67F2D00B78D6691 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA771710AA336C90C54CE630 /* CarPlaySceneDelegate.swift */; };
 		B784EF368A4DB5EA60215EB6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C5DB3F7189726EADA024D1 /* RootView.swift */; };
 		C05BA637589B3D9461E148E7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C5DB3F7189726EADA024D1 /* RootView.swift */; };
 		E43C4D10001A4610D736A598 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5AAFA835048E2FA7063A70 /* Models.swift */; };
@@ -30,7 +38,11 @@
 		9F152BF1446806D5C1FD3706 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		A6C5DB3F7189726EADA024D1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		B0D6EAB4068BED29851D67B2 /* LibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryStore.swift; sourceTree = "<group>"; };
+		BADB3A3050D707E098A49D45 /* SiriMediaHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriMediaHandler.swift; sourceTree = "<group>"; };
 		C843FB55859E2BFFDA1AAABA /* MusicPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerApp.swift; sourceTree = "<group>"; };
+		CAAF6360E8A284CBA97C67F2 /* CassetteIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassetteIntents.swift; sourceTree = "<group>"; };
+		DA771710AA336C90C54CE630 /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
+		DF5719091C191A0484418C2C /* MusicSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSearch.swift; sourceTree = "<group>"; };
 		EF5AAFA835048E2FA7063A70 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		F0A3CBE854BDB0945BAFCB10 /* CassetteMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CassetteMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -41,11 +53,15 @@
 			children = (
 				9F152BF1446806D5C1FD3706 /* AppModel.swift */,
 				1F2F62DAF5F3A0F4A69D3C40 /* Assets.xcassets */,
+				DA771710AA336C90C54CE630 /* CarPlaySceneDelegate.swift */,
+				CAAF6360E8A284CBA97C67F2 /* CassetteIntents.swift */,
 				B0D6EAB4068BED29851D67B2 /* LibraryStore.swift */,
 				EF5AAFA835048E2FA7063A70 /* Models.swift */,
 				C843FB55859E2BFFDA1AAABA /* MusicPlayerApp.swift */,
+				DF5719091C191A0484418C2C /* MusicSearch.swift */,
 				4095E58DAA6930F5C260BB4F /* PlayerController.swift */,
 				A6C5DB3F7189726EADA024D1 /* RootView.swift */,
+				BADB3A3050D707E098A49D45 /* SiriMediaHandler.swift */,
 			);
 			path = MusicPlayer;
 			sourceTree = "<group>";
@@ -170,11 +186,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E51F2F271A46AD7C5567F54F /* AppModel.swift in Sources */,
+				B0038C1FB67F2D00B78D6691 /* CarPlaySceneDelegate.swift in Sources */,
+				27ADEF78EF4B7294AFD26201 /* CassetteIntents.swift in Sources */,
 				7679010937D38C1D9A2F5A8D /* LibraryStore.swift in Sources */,
 				E43C4D10001A4610D736A598 /* Models.swift in Sources */,
 				5FB27F96C2400D325DFA6EC2 /* MusicPlayerApp.swift in Sources */,
+				4E15BB3B612B7612AB352CD7 /* MusicSearch.swift in Sources */,
 				120796996F91349FBD663362 /* PlayerController.swift in Sources */,
 				C05BA637589B3D9461E148E7 /* RootView.swift in Sources */,
+				37576AF3F3A524696715230C /* SiriMediaHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,11 +203,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0901BC77E7D5E40082A6C3C9 /* AppModel.swift in Sources */,
+				7FBC6485331826C3947B0FCD /* CarPlaySceneDelegate.swift in Sources */,
+				1E8F0A63ED1AAAD2B65043C9 /* CassetteIntents.swift in Sources */,
 				3083235E78097B70F7072204 /* LibraryStore.swift in Sources */,
 				E770B076D008AFE5B1E70464 /* Models.swift in Sources */,
 				7C0508D0D98135A4B5556528 /* MusicPlayerApp.swift in Sources */,
+				A194513E9C2F86AB92516B64 /* MusicSearch.swift in Sources */,
 				EF203586411315D283B2B0D5 /* PlayerController.swift in Sources */,
 				B784EF368A4DB5EA60215EB6 /* RootView.swift in Sources */,
+				5583C47E79730F680CC3C36E /* SiriMediaHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +295,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = KMW97A6XG2;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -292,7 +316,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -339,7 +363,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = KMW97A6XG2;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -354,7 +378,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -9,6 +9,8 @@ import ServiceManagement
 struct MusicPlayerApp: App {
     #if os(macOS)
     @NSApplicationDelegateAdaptor(MacAppDelegate.self) private var appDelegate
+    #elseif os(iOS)
+    @UIApplicationDelegateAdaptor(CassetteAppDelegate.self) private var appDelegate
     #endif
     @StateObject private var app = AppModel.shared
 
