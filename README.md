@@ -60,6 +60,7 @@ Tapping a song plays it and queues the other songs in the same folder, in the cu
 - Folders are chosen with the system document picker. Several folders can be added at once.
 - Audio continues in the background and with the screen locked (`audio` background mode).
 - Lock Screen and Control Center show the title, artist, album, artwork, and playback position, and accept play, pause, next, previous, and scrubbing.
+- Update check: at most once a day (on launch or when returning to the app), Cassette asks Apple's App Store lookup service for the latest version, sending only the app ID and country code. If a newer version can run on the device, an **Update available** alert offers **Update** (opens the App Store page) or **Not Now** (skips that version). An **Update to x.y** row stays in the sidebar until you update. Playback never needs a connection.
 
 ### Mac
 

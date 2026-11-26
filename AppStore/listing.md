@@ -60,7 +60,7 @@ Your music never leaves your device. Cassette doesn't collect any data, show ads
 
 ### App Review notes
 
-Cassette plays audio files that are already on the device. It has no account or sign-in and makes no network requests.
+Cassette plays audio files that are already on the device. It has no account or sign-in. Its only network request is a once-a-day update check to Apple's App Store lookup service (app ID and country code only).
 
 To test: open the Files app and put a few audio files (MP3 or M4A) in a folder under On My iPhone or iCloud Drive. Open Cassette, tap Choose Music Folder, and pick that folder. Tap a song to play it; the mini player at the bottom controls playback, and tapping the title opens Now Playing. Audio continues in the background and can be controlled from the Lock Screen.
 

@@ -11,6 +11,7 @@
 		120796996F91349FBD663362 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4095E58DAA6930F5C260BB4F /* PlayerController.swift */; };
 		1E8F0A63ED1AAAD2B65043C9 /* CassetteIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF6360E8A284CBA97C67F2 /* CassetteIntents.swift */; };
 		27ADEF78EF4B7294AFD26201 /* CassetteIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF6360E8A284CBA97C67F2 /* CassetteIntents.swift */; };
+		2BCAD6A66490C5AB5E02467F /* UpdateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD8667316FF162E9CB340F /* UpdateChecker.swift */; };
 		3083235E78097B70F7072204 /* LibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D6EAB4068BED29851D67B2 /* LibraryStore.swift */; };
 		37576AF3F3A524696715230C /* SiriMediaHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB3A3050D707E098A49D45 /* SiriMediaHandler.swift */; };
 		4E15BB3B612B7612AB352CD7 /* MusicSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5719091C191A0484418C2C /* MusicSearch.swift */; };
@@ -25,6 +26,7 @@
 		B0038C1FB67F2D00B78D6691 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA771710AA336C90C54CE630 /* CarPlaySceneDelegate.swift */; };
 		B784EF368A4DB5EA60215EB6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C5DB3F7189726EADA024D1 /* RootView.swift */; };
 		C05BA637589B3D9461E148E7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C5DB3F7189726EADA024D1 /* RootView.swift */; };
+		E2EB4706B387CADF38031F3E /* UpdateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD8667316FF162E9CB340F /* UpdateChecker.swift */; };
 		E43C4D10001A4610D736A598 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5AAFA835048E2FA7063A70 /* Models.swift */; };
 		E51F2F271A46AD7C5567F54F /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F152BF1446806D5C1FD3706 /* AppModel.swift */; };
 		E770B076D008AFE5B1E70464 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5AAFA835048E2FA7063A70 /* Models.swift */; };
@@ -41,6 +43,7 @@
 		A6C5DB3F7189726EADA024D1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		B0D6EAB4068BED29851D67B2 /* LibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryStore.swift; sourceTree = "<group>"; };
 		BADB3A3050D707E098A49D45 /* SiriMediaHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriMediaHandler.swift; sourceTree = "<group>"; };
+		BCFD8667316FF162E9CB340F /* UpdateChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateChecker.swift; sourceTree = "<group>"; };
 		C843FB55859E2BFFDA1AAABA /* MusicPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerApp.swift; sourceTree = "<group>"; };
 		CAAF6360E8A284CBA97C67F2 /* CassetteIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassetteIntents.swift; sourceTree = "<group>"; };
 		DA771710AA336C90C54CE630 /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 				EEBCC229261A67B16FEE7415 /* PrivacyInfo.xcprivacy */,
 				A6C5DB3F7189726EADA024D1 /* RootView.swift */,
 				BADB3A3050D707E098A49D45 /* SiriMediaHandler.swift */,
+				BCFD8667316FF162E9CB340F /* UpdateChecker.swift */,
 			);
 			path = MusicPlayer;
 			sourceTree = "<group>";
@@ -201,6 +205,7 @@
 				120796996F91349FBD663362 /* PlayerController.swift in Sources */,
 				C05BA637589B3D9461E148E7 /* RootView.swift in Sources */,
 				37576AF3F3A524696715230C /* SiriMediaHandler.swift in Sources */,
+				2BCAD6A66490C5AB5E02467F /* UpdateChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +223,7 @@
 				EF203586411315D283B2B0D5 /* PlayerController.swift in Sources */,
 				B784EF368A4DB5EA60215EB6 /* RootView.swift in Sources */,
 				5583C47E79730F680CC3C36E /* SiriMediaHandler.swift in Sources */,
+				E2EB4706B387CADF38031F3E /* UpdateChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

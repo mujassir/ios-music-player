@@ -20,7 +20,7 @@ e) Tap the song title in the mini player to open Now Playing: artwork, seek bar,
 f) Lock the device: audio keeps playing and can be controlled from the Lock Screen and Control Center.
 
 4. EXTERNAL SERVICES
-None. Cassette makes no network requests and includes no third-party SDKs, analytics, advertising, authentication, payment or AI services. Everything runs on the device using Apple frameworks (SwiftUI, AVFoundation, MediaPlayer).
+None. The only network request is an update check to Apple's App Store lookup service (itunes.apple.com/lookup, app ID and country code only), at most once a day, which shows an "Update available" alert linking to Cassette's App Store page. Cassette includes no third-party SDKs, analytics, advertising, authentication, payment or AI services. Everything runs on the device using Apple frameworks (SwiftUI, AVFoundation, MediaPlayer).
 
 5. REGIONAL DIFFERENCES
 None. The app works the same in every region where it is available.

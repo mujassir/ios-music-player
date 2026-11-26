@@ -25,6 +25,8 @@ struct RootView: View {
     @State private var columnVisibility = NavigationSplitViewVisibility.automatic
     #if os(iOS)
     @State private var sidebarBeforeSearch: String?
+    @StateObject private var updates = UpdateChecker.shared
+    @Environment(\.scenePhase) private var scenePhase
     #endif
 
     var body: some View {
@@ -44,6 +46,20 @@ struct RootView: View {
         .background {
             FolderPickerPresenter(isPresented: $showFolderPicker) { urls in
                 app.library.add(urls: urls)
+            }
+        }
+        // App Store update check: at most once a day, on launch and when coming back to the app.
+        .task { await updates.check() }
+        .onChange(of: scenePhase) { old, phase in
+            guard phase == .active, old == .background else { return }
+            Task { await updates.check() }
+        }
+        .alert("Update available", isPresented: $updates.showsPrompt) {
+            Button("Update") { updates.openAppStore() }
+            Button("Not Now", role: .cancel) { updates.skipAvailableVersion() }
+        } message: {
+            if let version = updates.availableVersion {
+                Text("Cassette \(version) is on the App Store. You have \(updates.currentVersion).")
             }
         }
         #endif
@@ -104,6 +120,15 @@ struct RootView: View {
                         Label("Reset", systemImage: "arrow.counterclockwise.circle")
                             .foregroundStyle(.red)
                     }
+                    #if os(iOS)
+                    if let version = updates.availableVersion {
+                        Button {
+                            updates.openAppStore()
+                        } label: {
+                            Label("Update to \(version)", systemImage: "arrow.down.circle")
+                        }
+                    }
+                    #endif
                     if !app.library.statusMessage.isEmpty {
                         Text(app.library.statusMessage)
                             .font(.footnote)
