@@ -28,7 +28,7 @@ Cassette does not collect information from anyone, including children under 13.
 
 ## Changes
 
-If this policy changes, the updated version will be posted here with a new date.
+If this policy changes, the updated version will be posted at https://mujassir.com/cassette/privacy/ (and in this file) with a new date.
 
 ## Contact
 

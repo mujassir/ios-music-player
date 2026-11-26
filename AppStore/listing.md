@@ -16,8 +16,8 @@ Source of truth for what is entered in App Store Connect.
 | Age rating | 4+ (no objectionable content) |
 | Price | Free |
 | Support URL | https://github.com/mujassir/ios-music-player/issues |
-| Marketing URL | https://github.com/mujassir/ios-music-player |
-| Privacy Policy URL | https://github.com/mujassir/ios-music-player/blob/main/PRIVACY.md |
+| Marketing URL | https://mujassir.com/cassette/ |
+| Privacy Policy URL | https://mujassir.com/cassette/privacy/ |
 | Copyright | 2026 Mujassir Nasir |
 | App Privacy | Data Not Collected |
 
